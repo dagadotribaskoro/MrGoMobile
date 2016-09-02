@@ -17,49 +17,46 @@ using MrGo.Service;
 
 namespace MrGo.Entity
 {
-    internal class RestoAdapterWrapper : Java.Lang.Object
+    internal class RestoByCategoryAdapterWrapper : Java.Lang.Object
     {
-        public TextView RestoName { get; set; }
-        public TextView RestoAddress { get; set; }
-        //public ImageView RestoImageView { get; set; }
-        public LinearLayout RestoBackGround { get; set; }
+        public TextView CatName { get; set; }
         public ImageView RestoBackGroundIV { get; set; }
     }
 
-    public class RestoAdapter : BaseAdapter
+    public class RestoByCategoryAdapter : BaseAdapter
     {
         private readonly Activity m_Context;
-        private readonly IEnumerable<Resto> m_restos;
+        private readonly IEnumerable<RestoCategoty> m_restos;
         public ImageLoaderMrGo ImageLoader { get; set; }
-        public RestoAdapter(Activity context, IEnumerable<Resto> restos)
+        public RestoByCategoryAdapter(Activity context, IEnumerable<RestoCategoty> restos)
         {
             m_Context = context;
             this.m_restos = restos;
             ImageLoader = new ImageLoaderMrGo(context, 800, 0);
-            }
+        }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
             if (position < 0)
                 return null;
-            View view = (convertView?? m_Context.LayoutInflater.Inflate(Resource.Layout.item_resto_imgView, parent, false));
+            View view = (convertView?? m_Context.LayoutInflater.Inflate(Resource.Layout.item_restoCat_imgView, parent, false));
             if (view == null)
                 return null;
-            var wrapper = view.Tag as RestoAdapterWrapper;
+            RestoByCategoryAdapterWrapper wrapper = view.Tag as RestoByCategoryAdapterWrapper;
             if (wrapper == null)
             {
-                wrapper = new RestoAdapterWrapper
+                wrapper = new RestoByCategoryAdapterWrapper
                 {
-                    RestoName = view.FindViewById<TextView>(Resource.Id.item_title),
+                    CatName = view.FindViewById<TextView>(Resource.Id.item_title),
                     //RestoImageView = view.FindViewById<ImageView>(Resource.Id.item_image),
-                    RestoAddress = view.FindViewById<TextView>(Resource.Id.item_address),
-                    RestoBackGround = view.FindViewById<LinearLayout>(Resource.Id.item_background),
+                    //RestoAddress = view.FindViewById<TextView>(Resource.Id.item_address),
+                    //RestoBackGround = view.FindViewById<LinearLayout>(Resource.Id.item_background),
                     RestoBackGroundIV = view.FindViewById<ImageView>(Resource.Id.imageViewBackGround)
                 };
                 view.Tag = wrapper;
             }
-            Resto resto = this.m_restos.ElementAt(position);
-            wrapper.RestoName.Text = resto.resto_name;
-            wrapper.RestoAddress.Text = resto.resto_address;
+            RestoCategoty resto = this.m_restos.ElementAt(position);
+            wrapper.CatName.Text = resto.restocategory_name;
+           // wrapper.RestoAddress.Text = resto.resto_address;
             //wrapper.RestoName.Alpha = 100;
             //wrapper.RestoAddress.Alpha = 100;
 
@@ -72,7 +69,7 @@ namespace MrGo.Entity
 
             //ImageLoader.DisplayImage(resto.resto_url_image, wrapper.RestoImageView, -1);
             //ImageLoader.DisplayImageLinearLayOut(resto.resto_url_image, wrapper.RestoBackGround, -1);
-            ImageLoader.DisplayImage(resto.resto_url_image, wrapper.RestoBackGroundIV, -1);
+            ImageLoader.DisplayImage(resto.restocategory_note, wrapper.RestoBackGroundIV, -1);
             return view;
         }
 

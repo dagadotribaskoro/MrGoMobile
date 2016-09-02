@@ -41,6 +41,12 @@ namespace MrGo.Service
                 query = Resto.GetAllSearchSQL(@params[1].ToString());
             if (key == "GetRestoByID")
                 query = Resto.GetRestoByID(@params[1].ToString());
+            if (key == "GetAllCategory")
+                query = RestoCategoty.GetAllCategory();
+            if (key == "GetAllByCategory")
+                query = Resto.GetAllByCategory(@params[1].ToString());
+            if (key == "GetAllTopTen")
+                query = Resto.GetAllTopTenSQL();
             string data = URLEncoder.Encode("query", "UTF-8") + "=" + URLEncoder.Encode(query, "UTF-8");
             HttpURLConnection urlConn = (HttpURLConnection)url.OpenConnection();
             urlConn.RequestMethod = "POST";
@@ -64,7 +70,10 @@ namespace MrGo.Service
                 }
                 urlConn.Disconnect();
                 string result = stringBuilder.ToString().Trim();
-                m_result = Resto.GetListByServerResponse(result);
+                if(key == "GetAllCategory")
+                    m_result = RestoCategoty.GetListByServerResponse(result);
+                else
+                    m_result = Resto.GetListByServerResponse(result);
                 return result;
             }
             catch (Java.IO.IOException ex)

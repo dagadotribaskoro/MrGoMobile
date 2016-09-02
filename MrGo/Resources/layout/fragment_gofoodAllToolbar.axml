@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:descendantFocusability="beforeDescendants"  android:layout_below="@id/toolbar">
+        <GridView
+            android:id="@+id/grid"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:numColumns="1"
+            android:longClickable="true"
+            android:stretchMode="columnWidth"
+            android:drawSelectorOnTop="true"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:horizontalSpacing="8dp"
+            android:verticalSpacing="8dp"
+            android:gravity="center" />
+    </LinearLayout>
+</RelativeLayout>

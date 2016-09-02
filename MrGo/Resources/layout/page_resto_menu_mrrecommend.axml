@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_below="@id/toolbar"
+            android:paddingBottom="8dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ll_background"
+                android:background="@drawable/resto">
+                <TextView
+                    android:id="@+id/resto_name"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Lapo Laguboti"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="150dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Jl. Brigjend Katamso KM 8"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/resto_address"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+            <TextView
+                android:text="Menu Spesial"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+            <MrGo.Entity.ExpandableHeightGridView
+                android:id="@+id/gridMenuSpesial"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:longClickable="true"
+                android:stretchMode="columnWidth"
+                android:drawSelectorOnTop="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="8dp"
+                android:gravity="center" />
+            <TextView
+                android:text="Menu Makanan"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+        <!--<Button
+                android:text="- Daftar Makanan"
+                android:id="@+id/btnMenuMakanan"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="match_parent"
+                android:layout_height="39.0dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold" />-->
+            <MrGo.Entity.ExpandableHeightGridView
+                android:id="@+id/gridMenuMakanan"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:longClickable="true"
+                android:stretchMode="columnWidth"
+                android:drawSelectorOnTop="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="8dp"
+                android:gravity="center" />
+        <!--<Button
+                android:text="- Daftar Minuman"
+                android:id="@+id/btnMenuMinuman"
+                android:background="?android:attr/selectableItemBackground"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_width="match_parent"
+                android:layout_height="37.0dp"
+                android:gravity="center_vertical"
+                android:textStyle="bold" />-->
+            <TextView
+                android:text="Menu Minuman"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+            <MrGo.Entity.ExpandableHeightGridView
+                android:id="@+id/gridMenuMinuman"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:longClickable="true"
+                android:stretchMode="columnWidth"
+                android:drawSelectorOnTop="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="8dp"
+                android:gravity="center" />
+            <Button
+                android:text="Pesan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPesan"
+                android:background="@android:color/holo_green_dark"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

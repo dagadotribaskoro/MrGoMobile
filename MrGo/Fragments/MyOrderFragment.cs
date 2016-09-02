@@ -46,13 +46,14 @@ namespace MrGo.Fragments
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
-            //Toast.MakeText(this.Activity, "Top ActionBar pressed: " + item.TitleFormatted, ToastLength.Short).Show();
-            if (item.TitleFormatted.ToString() == "Refresh")
+            //Toast.MakeText(this, "Top ActionBar pressed: " + item.TitleFormatted, ToastLength.Short).Show();
+            if (item.ToString() == "Refresh")
             {
-                Toast.MakeText(this.Activity, "Refreshing...", ToastLength.Short).Show();
-                //MyOrderTabAdapter adapter = (MyOrderTabAdapter)this.m_Adapter;
-                //adapter.Refresh(Activity);
+                Toast.MakeText(m_parentActivity, "Refreshing", ToastLength.Short).Show();
+                m_parentActivity.Refresh("MyOrderFragment");
             }
+            if (item.ToString() == "Search")
+                Toast.MakeText(m_parentActivity, "Search", ToastLength.Short).Show();
             return base.OnOptionsItemSelected(item);
         }
     }

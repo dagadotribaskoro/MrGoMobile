@@ -22,7 +22,7 @@ using MrGo.Service;
 namespace MrGo
 {
    // [Activity(Label = "MrGo",  LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/ic_launcher")]
-   [Activity(Label = "MrGo", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/icoMrGo")]
+   [Activity(Label = "MrGo", MainLauncher = true, LaunchMode = LaunchMode.SingleTop, Icon = "@drawable/icoMrGo", HardwareAccelerated = false)]
     public class HomeActivity : BaseActivity, ISetMemberActivity, ISerializable
     {
         //TextView tvWelcomeUser;
@@ -40,6 +40,11 @@ namespace MrGo
         private string[] SectionsNoLogin = new[] {"ImageDrawer", "Saldo", "Beranda", "Login", "Help" };
         SettingsServiceLocalDB m_settingSvc;
         Settings m_settingCurrentLogin;
+
+
+        GoFoodFragment m_GoFoodFragment;
+        MyOrderFragment m_MyOrderFragment;
+
         protected override int LayoutResource
         {
             get
@@ -117,20 +122,49 @@ namespace MrGo
                
             }
             //--------------------
+            m_GoFoodFragment = new GoFoodFragment(this, member_id);
+            m_MyOrderFragment = new MyOrderFragment(this, member_id);
+
             startBeranda();
 
         }
+
+        internal void Refresh(string fragment)
+        {
+            if (fragment == "GoFoodFragment")
+            {
+                m_GoFoodFragment = new GoFoodFragment(this, member_id);
+                SupportFragmentManager.BeginTransaction()
+                   .Replace(Resource.Id.content_frame, m_GoFoodFragment)
+                   .Commit();
+                this.drawerListView.SetItemChecked(2, true);
+                SupportActionBar.Title = this.title = SectionsLogin[2];
+                this.drawerLayout.CloseDrawers();
+            }
+            if (fragment == "MyOrderFragment")
+            {
+                m_MyOrderFragment = new MyOrderFragment(this, member_id);
+                SupportFragmentManager.BeginTransaction()
+                   .Replace(Resource.Id.content_frame, m_MyOrderFragment)
+                   .Commit();
+                this.drawerListView.SetItemChecked(3, true);
+                SupportActionBar.Title = this.title = SectionsLogin[3];
+                this.drawerLayout.CloseDrawers();
+            }
+        }
+
         private void startBeranda()
         {
-            Android.Support.V4.App.Fragment fragment = new GoFoodFragment(this, member_id);
+           // Android.Support.V4.App.Fragment fragment = new GoFoodFragment(this, member_id);
             SupportFragmentManager.BeginTransaction()
-                  .Replace(Resource.Id.content_frame, fragment)
+                  .Replace(Resource.Id.content_frame, m_GoFoodFragment)
                   .Commit();
 
             this.drawerListView.SetItemChecked(2, true);
-            SupportActionBar.Title = this.title = "Beranda";
+            SupportActionBar.Title = this.title = SectionsLogin[2];
             this.drawerLayout.CloseDrawers();
         }
+
         private void DrawerListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             Android.Support.V4.App.Fragment fragment = null;
@@ -138,11 +172,11 @@ namespace MrGo
             switch (tvItemMenu.Text)
             {
                 case "Beranda":
-                    fragment = new GoFoodFragment(this, member_id);
+                    fragment = m_GoFoodFragment;
                    // startBeranda();return;
                     break;
                 case "Status Pesanan":
-                    fragment = new MyOrderFragment(this, member_id);
+                    fragment = m_MyOrderFragment;// new MyOrderFragment(this, member_id);
                     break;
                 case "My Profile":
                     fragment = new ProfileFragment();
@@ -157,7 +191,7 @@ namespace MrGo
                     m_settingCurrentLogin.Val_2 = "0";
                     m_settingSvc.Update(m_settingCurrentLogin);
                     Toast.MakeText(this, "You has been logged out.", ToastLength.Short).Show();
-                    startBeranda();
+                    Refresh("GoFoodFragment");
                     return;
                     //break;
                 case "Login":
@@ -196,7 +230,7 @@ namespace MrGo
                 m_settingCurrentLogin.Val_1 = member_id.ToString();
                 m_settingCurrentLogin.Val_2 = "1";
                 m_settingSvc.Update(m_settingCurrentLogin);
-                startBeranda();
+                Refresh("GoFoodFragment");
             }
         }
         protected override void OnResume()
@@ -264,6 +298,8 @@ namespace MrGo
         {
             if (this.drawerToggle.OnOptionsItemSelected(item))
                 return true;
+          //  if(item.te)
+
             return base.OnOptionsItemSelected(item);
         }
         public void SetMemberActivity(string key, Member member)
@@ -283,10 +319,10 @@ namespace MrGo
             //return base.OnCreateOptionsMenu(menu);
        // }
 
-       // public override bool OnOptionsItemSelected(IMenuItem item)
+       //public override bool OnOptionsItemSelected(IMenuItem item)
        // {
-            //Toast.MakeText(this, "Top ActionBar pressed: " + item.TitleFormatted, ToastLength.Short).Show();
-            //return base.OnOptionsItemSelected(item);
+       //     Toast.MakeText(this, "Top ActionBar pressed: " + item.TitleFormatted, ToastLength.Short).Show();
+       //     return base.OnOptionsItemSelected(item);
        // }
     }
 }

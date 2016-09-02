@@ -18,19 +18,18 @@ using static Android.Widget.TextView;
 
 namespace MrGo.Fragments
 {
-    public class GoFoodFragmentAll : Fragment, IBackGroundResult
+    public class MrFoodFragment : Fragment, IBackGroundResult
     {
         private int m_member_id = 0;
-        public GoFoodFragmentAll(int member_id)
+        private List<RestoCategoty> _restocats;
+        GridView grid;
+        EditText m_etSearch;
+        public MrFoodFragment(int member_id)
         {
             this.RetainInstance = true;
             loadAllRestoBackgroud();
             m_member_id = member_id; 
         }
-        private List<Resto> _restos;
-        GridView grid;
-        EditText m_etSearch;
-
         public Context Context
         {
             get
@@ -42,7 +41,7 @@ namespace MrGo.Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Android.OS.Bundle savedInstanceState)
         {
             View ignored = base.OnCreateView(inflater, container, savedInstanceState);
-            View view = inflater.Inflate(Resource.Layout.fragment_gofoodAll, null);
+            View view = inflater.Inflate(Resource.Layout.fragment_mrfood, null);
             grid = view.FindViewById<GridView>(Resource.Id.grid);
             grid.ItemClick += GridOnItemClick;
             //m_etSearch = view.FindViewById<EditText>(Resource.Id.editTextSearch);
@@ -57,26 +56,27 @@ namespace MrGo.Fragments
         //        loadAllRestoBackgroudSearch();
         //    }
         //}
-        private void loadAllRestoBackgroudSearch()
-        {
-            RestoService service = new RestoService(this);
-            service.Execute("GetAllSearch", m_etSearch.Text);
-        }
+        //private void loadAllRestoBackgroudSearch()
+        //{
+        //    RestoService service = new RestoService(this);
+        //    service.Execute("GetAllSearch", m_etSearch.Text);
+        //}
         private void loadAllRestoBackgroud()
         {
             RestoService service = new RestoService(this);
-            service.Execute("GetAll");
+            service.Execute("GetAllCategory");
         }
-
-
         public void SetBackGroundResult(string key, object result)
         {
             if (!CommonService.CheckInternetConnection(Activity)) { Toast.MakeText(Activity, "Please check your internet connection", ToastLength.Short).Show(); return; }
-            if (result != null)
+            if (key == "GetAllCategory")
             {
-                _restos = (List<Resto>) result;
-                grid.Adapter = new RestoAdapter(Activity, _restos);
-                grid.RefreshDrawableState();
+                if (result != null)
+                {
+                    _restocats = (List<RestoCategoty>)result;
+                    grid.Adapter = new RestoByCategoryAdapter(Activity, _restocats);
+                    grid.RefreshDrawableState();
+                }
             }
         }
 
@@ -89,12 +89,10 @@ namespace MrGo.Fragments
 
         private void GridOnItemClick(object sender, AdapterView.ItemClickEventArgs itemClickEventArgs)
         {
-            Intent intent = new Intent(Activity, typeof(RestoActivity));
+            Intent intent = new Intent(Activity, typeof(RestoByCategoryActivity));
             //intent.PutExtra("resto", _restos[itemClickEventArgs.Position]);
-            intent.PutExtra("resto_id", _restos[itemClickEventArgs.Position].resto_id.ToString());
-            intent.PutExtra("resto_name", _restos[itemClickEventArgs.Position].resto_name);
-            intent.PutExtra("resto_address", _restos[itemClickEventArgs.Position].resto_address);
-            intent.PutExtra("resto_url_image", _restos[itemClickEventArgs.Position].resto_url_image);
+            intent.PutExtra("restocategory_id", _restocats[itemClickEventArgs.Position].restocategory_id.ToString());
+            intent.PutExtra("restocategory_name", _restocats[itemClickEventArgs.Position].restocategory_name);
             intent.PutExtra("member_id", m_member_id.ToString());
             StartActivity(intent);
         }

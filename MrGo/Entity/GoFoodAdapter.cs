@@ -8,7 +8,7 @@ namespace MrGo.Entity
         private int m_member_id = 0;
         private static readonly string[] Content = new[]
             {
-                "GoFOOD", "FAVORIT"//, "RECENT", "HOT LIST"
+                "TOP 10", "MR RECOMMENDED", "MR FOOD"//, "RECENT", "HOT LIST"
             };
 
         public GoFoodAdapter(FragmentManager p0, int member_id)
@@ -25,12 +25,14 @@ namespace MrGo.Entity
             switch (index)
             {//PAGE SELECT / SLIDE
                 case 0:
-                    return new GoFoodFragmentAll(m_member_id);
-               // case 1:
-                  //  return new FriendsRecentFragment();
+                    return new TopFoodFragmentAll(m_member_id);
+                case 1:
+                    return new MrRecommendFragment(m_member_id);
+                case 2:
+                    return new MrFoodFragment(m_member_id);
             }
 
-            return new GoFoodFragmentAll(m_member_id);
+            return new TopFoodFragmentAll(m_member_id);
             //return new BrowseFragment();
         }
 

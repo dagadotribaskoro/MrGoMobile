@@ -74,6 +74,7 @@
   <ItemGroup>
     <Compile Include="Activities\BaseActivity.cs" />
     <Compile Include="Activities\FriendActivity.cs" />
+    <Compile Include="Activities\RestoByCategoryActivity.cs" />
     <Compile Include="Activities\IBackGroundResult.cs" />
     <Compile Include="Activities\IntentActivity.cs" />
     <Compile Include="Activities\RestoMenuActivity.cs" />
@@ -93,12 +94,15 @@
     <Compile Include="Entity\MyOrderTabAdapter.cs" />
     <Compile Include="Entity\RestaurantAdapter.cs" />
     <Compile Include="Entity\Resto.cs" />
+    <Compile Include="Entity\RestoByCategoryAdapter.cs" />
     <Compile Include="Entity\RestoAdapter.cs" />
     <Compile Include="Entity\Transaction.cs" />
     <Compile Include="Entity\TransactionAdapter.cs" />
     <Compile Include="Entity\Util.cs" />
-    <Compile Include="Fragments\GoFoodFragmentAll.cs" />
+    <Compile Include="Fragments\MrFoodFragment.cs" />
+    <Compile Include="Fragments\TopFoodFragmentAll.cs" />
     <Compile Include="Fragments\GoFoodFragment.cs" />
+    <Compile Include="Fragments\MrRecommendFragment.cs" />
     <Compile Include="Fragments\MyOrderFragment.cs" />
     <Compile Include="Fragments\MyOrderTabOnProgressFragment.cs" />
     <Compile Include="Fragments\ProfileFragment.cs" />
@@ -227,6 +231,19 @@
     <AndroidResource Include="Resources\layout\page_view_order.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\page_resto_menu_mrrecommend.axml" />
+    <AndroidResource Include="Resources\layout\item_resto_imgView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_mrfood.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\item_restoCat_imgView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_gofoodAllToolbar.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -283,13 +300,13 @@
     <AndroidResource Include="Resources\values\dimens.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable-hdpi\drawer_shadow_dark.9.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\drawer_shadow_dark.9.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_launcher.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable-hdpi\ic_menu_refresh.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_menu_refresh.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\integers.xml" />
@@ -328,6 +345,36 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icoMrGo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_refresh_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_refresh_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_refresh_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_refresh_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_refresh_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_search_white_24dp.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

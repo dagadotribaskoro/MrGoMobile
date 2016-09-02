@@ -421,27 +421,31 @@ namespace MrGo.Service
 
         public FileCache(Context context)
         {
-            string stuff = Android.OS.Environment.ExternalStorageState;
-            if (Android.OS.Environment.ExternalStorageState.Equals(Android.OS.Environment.MediaMounted))
+            try
             {
-                m_CacheDir = new File(Android.OS.Environment.ExternalStorageDirectory, "Android/data/" + context.ApplicationContext.PackageName);
-                m_CacheDir = context.ExternalCacheDir;
+                string stuff = Android.OS.Environment.ExternalStorageState;
+                if (Android.OS.Environment.ExternalStorageState.Equals(Android.OS.Environment.MediaMounted))
+                {
+                    m_CacheDir = new File(Android.OS.Environment.ExternalStorageDirectory, "Android/data/" + context.ApplicationContext.PackageName);
+                    m_CacheDir = context.ExternalCacheDir;
+                }
+                else
+                {
+                    m_CacheDir = context.CacheDir;
+                }
+
+                if (m_CacheDir == null)
+                    m_CacheDir = context.CacheDir;
+
+
+
+
+                if (!m_CacheDir.Exists())
+                {
+                    var success = m_CacheDir.Mkdirs();
+                }
             }
-            else
-            {
-                m_CacheDir = context.CacheDir;
-            }
-
-            if (m_CacheDir == null)
-                m_CacheDir = context.CacheDir;
-
-
-
-
-            if (!m_CacheDir.Exists())
-            {
-                var success = m_CacheDir.Mkdirs();
-            }
+            catch { }
         }
 
         public File GetFile(string url)

@@ -70,7 +70,6 @@ namespace MrGo.Activities
             // grid.Adapter = new MonkeyAdapter(this, _friends);
             m_menuGridSpesial.ItemClick += GridOnItemClick;
             //m_menuGridMinuman.ItemClick += GridOnItemClick;
-
             //set title here
             SupportActionBar.Title = Title;
         }

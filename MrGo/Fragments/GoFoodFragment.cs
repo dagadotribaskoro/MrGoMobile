@@ -52,10 +52,17 @@ namespace MrGo.Fragments
           //  inflater.Inflate(Resource.Menu.refresh, menu);
             inflater.Inflate(Resource.Menu.home, menu);
         }
-        //public override bool OnOptionsItemSelected(IMenuItem item)
-        //{
-        //    //Toast.MakeText(this, "Top ActionBar pressed: " + item.TitleFormatted, ToastLength.Short).Show();
-        //    return base.OnOptionsItemSelected(item);
-        //}
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            //Toast.MakeText(this, "Top ActionBar pressed: " + item.TitleFormatted, ToastLength.Short).Show();
+            if (item.ToString() == "Refresh")
+            {
+                Toast.MakeText(m_parentActivity, "Refreshing", ToastLength.Short).Show();
+                m_parentActivity.Refresh("GoFoodFragment");
+            }
+            if (item.ToString() == "Search")
+                Toast.MakeText(m_parentActivity, "Search", ToastLength.Short).Show();
+            return base.OnOptionsItemSelected(item);
+        }
     }
 }

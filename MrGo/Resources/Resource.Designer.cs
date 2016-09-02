@@ -1774,58 +1774,64 @@ namespace MrGo
 			public const int ic_menu_refresh = 2130837571;
 			
 			// aapt resource value: 0x7f020044
-			public const int icoMrGo = 2130837572;
+			public const int ic_refresh_white_24dp = 2130837572;
 			
 			// aapt resource value: 0x7f020045
-			public const int Icon = 2130837573;
+			public const int ic_search_white_24dp = 2130837573;
 			
 			// aapt resource value: 0x7f020046
-			public const int imgBg = 2130837574;
+			public const int icoMrGo = 2130837574;
 			
 			// aapt resource value: 0x7f020047
-			public const int imgMrGoDrawer = 2130837575;
+			public const int Icon = 2130837575;
 			
 			// aapt resource value: 0x7f020048
-			public const int item_menu_resto = 2130837576;
+			public const int imgBg = 2130837576;
 			
 			// aapt resource value: 0x7f020049
-			public const int layout_restomenu = 2130837577;
+			public const int imgMrGoDrawer = 2130837577;
 			
 			// aapt resource value: 0x7f02004a
-			public const int menu = 2130837578;
+			public const int item_menu_resto = 2130837578;
 			
 			// aapt resource value: 0x7f02004b
-			public const int password25 = 2130837579;
+			public const int layout_restomenu = 2130837579;
 			
 			// aapt resource value: 0x7f02004c
-			public const int pin_progress_pinned = 2130837580;
+			public const int menu = 2130837580;
 			
 			// aapt resource value: 0x7f02004d
-			public const int pin_progress_shadow = 2130837581;
+			public const int password25 = 2130837581;
 			
 			// aapt resource value: 0x7f02004e
-			public const int pin_progress_unpinned = 2130837582;
+			public const int pin_progress_pinned = 2130837582;
 			
 			// aapt resource value: 0x7f02004f
-			public const int psts_background_tab = 2130837583;
+			public const int pin_progress_shadow = 2130837583;
 			
 			// aapt resource value: 0x7f020050
-			public const int resto = 2130837584;
+			public const int pin_progress_unpinned = 2130837584;
 			
 			// aapt resource value: 0x7f020051
-			public const int scrubber_control_normal_holo = 2130837585;
+			public const int psts_background_tab = 2130837585;
 			
 			// aapt resource value: 0x7f020052
-			public const int scrubber_control_pressed_holo = 2130837586;
+			public const int resto = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int slide_right = 2130837587;
+			public const int scrubber_control_normal_holo = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int slide_up = 2130837588;
+			public const int scrubber_control_pressed_holo = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int User25 = 2130837589;
+			public const int slide_right = 2130837589;
+			
+			// aapt resource value: 0x7f020056
+			public const int slide_up = 2130837590;
+			
+			// aapt resource value: 0x7f020057
+			public const int User25 = 2130837591;
 			
 			static Drawable()
 			{
@@ -1840,11 +1846,11 @@ namespace MrGo
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f09008e
-			public const int Login_button = 2131296398;
+			// aapt resource value: 0x7f090090
+			public const int Login_button = 2131296400;
 			
-			// aapt resource value: 0x7f09008f
-			public const int SignUp = 2131296399;
+			// aapt resource value: 0x7f090091
+			public const int SignUp = 2131296401;
 			
 			// aapt resource value: 0x7f090050
 			public const int action_bar = 2131296336;
@@ -1906,14 +1912,14 @@ namespace MrGo
 			// aapt resource value: 0x7f090065
 			public const int btnEditNumber = 2131296357;
 			
-			// aapt resource value: 0x7f0900ae
-			public const int btnLogIn = 2131296430;
+			// aapt resource value: 0x7f0900b0
+			public const int btnLogIn = 2131296432;
 			
-			// aapt resource value: 0x7f090099
-			public const int btnMenuMakanan = 2131296409;
+			// aapt resource value: 0x7f09009b
+			public const int btnMenuMakanan = 2131296411;
 			
-			// aapt resource value: 0x7f09009a
-			public const int btnMenuMinuman = 2131296410;
+			// aapt resource value: 0x7f09009c
+			public const int btnMenuMinuman = 2131296412;
 			
 			// aapt resource value: 0x7f090063
 			public const int btnNext = 2131296355;
@@ -1921,20 +1927,20 @@ namespace MrGo
 			// aapt resource value: 0x7f090066
 			public const int btnSendAgain = 2131296358;
 			
-			// aapt resource value: 0x7f0900be
-			public const int btnSignIn = 2131296446;
+			// aapt resource value: 0x7f0900c0
+			public const int btnSignIn = 2131296448;
 			
-			// aapt resource value: 0x7f0900b3
-			public const int btnSignUp = 2131296435;
+			// aapt resource value: 0x7f0900b5
+			public const int btnSignUp = 2131296437;
 			
-			// aapt resource value: 0x7f0900bd
-			public const int btn_Register = 2131296445;
+			// aapt resource value: 0x7f0900bf
+			public const int btn_Register = 2131296447;
 			
-			// aapt resource value: 0x7f0900aa
-			public const int buttonCancelPesan = 2131296426;
+			// aapt resource value: 0x7f0900ac
+			public const int buttonCancelPesan = 2131296428;
 			
-			// aapt resource value: 0x7f090084
-			public const int buttonHapus = 2131296388;
+			// aapt resource value: 0x7f090086
+			public const int buttonHapus = 2131296390;
 			
 			// aapt resource value: 0x7f09007c
 			public const int buttonKurang = 2131296380;
@@ -1942,8 +1948,8 @@ namespace MrGo
 			// aapt resource value: 0x7f090046
 			public const int buttonPanel = 2131296326;
 			
-			// aapt resource value: 0x7f09009b
-			public const int buttonPesan = 2131296411;
+			// aapt resource value: 0x7f09009d
+			public const int buttonPesan = 2131296413;
 			
 			// aapt resource value: 0x7f09007e
 			public const int buttonTambah = 2131296382;
@@ -1975,8 +1981,8 @@ namespace MrGo
 			// aapt resource value: 0x7f090041
 			public const int contentPanel = 2131296321;
 			
-			// aapt resource value: 0x7f090093
-			public const int content_frame = 2131296403;
+			// aapt resource value: 0x7f090095
+			public const int content_frame = 2131296405;
 			
 			// aapt resource value: 0x7f090045
 			public const int custom = 2131296325;
@@ -1996,32 +2002,32 @@ namespace MrGo
 			// aapt resource value: 0x7f09000c
 			public const int disableHome = 2131296268;
 			
-			// aapt resource value: 0x7f090092
-			public const int drawer_layout = 2131296402;
+			// aapt resource value: 0x7f090094
+			public const int drawer_layout = 2131296404;
 			
 			// aapt resource value: 0x7f09001c
 			public const int dropdown = 2131296284;
 			
-			// aapt resource value: 0x7f0900b9
-			public const int editTextAddress = 2131296441;
+			// aapt resource value: 0x7f0900bb
+			public const int editTextAddress = 2131296443;
 			
-			// aapt resource value: 0x7f0900bc
-			public const int editTextCPassword = 2131296444;
+			// aapt resource value: 0x7f0900be
+			public const int editTextCPassword = 2131296446;
 			
-			// aapt resource value: 0x7f0900a2
-			public const int editTextDelAddress = 2131296418;
-			
-			// aapt resource value: 0x7f09008b
-			public const int editTextEmail = 2131296395;
-			
-			// aapt resource value: 0x7f0900b5
-			public const int editTextName = 2131296437;
+			// aapt resource value: 0x7f0900a4
+			public const int editTextDelAddress = 2131296420;
 			
 			// aapt resource value: 0x7f09008d
-			public const int editTextPassword = 2131296397;
+			public const int editTextEmail = 2131296397;
 			
 			// aapt resource value: 0x7f0900b7
-			public const int editTextPhone = 2131296439;
+			public const int editTextName = 2131296439;
+			
+			// aapt resource value: 0x7f09008f
+			public const int editTextPassword = 2131296399;
+			
+			// aapt resource value: 0x7f0900b9
+			public const int editTextPhone = 2131296441;
 			
 			// aapt resource value: 0x7f090052
 			public const int edit_query = 2131296338;
@@ -2029,23 +2035,23 @@ namespace MrGo
 			// aapt resource value: 0x7f090014
 			public const int end = 2131296276;
 			
-			// aapt resource value: 0x7f0900b2
-			public const int etConfirmPassword = 2131296434;
+			// aapt resource value: 0x7f0900b4
+			public const int etConfirmPassword = 2131296436;
 			
 			// aapt resource value: 0x7f090062
 			public const int etConfirmationCode = 2131296354;
 			
-			// aapt resource value: 0x7f0900ac
-			public const int etEmail = 2131296428;
+			// aapt resource value: 0x7f0900ae
+			public const int etEmail = 2131296430;
 			
-			// aapt resource value: 0x7f0900b0
-			public const int etName = 2131296432;
+			// aapt resource value: 0x7f0900b2
+			public const int etName = 2131296434;
 			
-			// aapt resource value: 0x7f0900ad
-			public const int etPassword = 2131296429;
+			// aapt resource value: 0x7f0900af
+			public const int etPassword = 2131296431;
 			
-			// aapt resource value: 0x7f0900b1
-			public const int etPhone = 2131296433;
+			// aapt resource value: 0x7f0900b3
+			public const int etPhone = 2131296435;
 			
 			// aapt resource value: 0x7f090037
 			public const int expand_activities_button = 2131296311;
@@ -2062,26 +2068,26 @@ namespace MrGo
 			// aapt resource value: 0x7f09002e
 			public const int fill_vertical = 2131296302;
 			
-			// aapt resource value: 0x7f090091
-			public const int friend_description = 2131296401;
+			// aapt resource value: 0x7f090093
+			public const int friend_description = 2131296403;
 			
-			// aapt resource value: 0x7f090090
-			public const int friend_image = 2131296400;
+			// aapt resource value: 0x7f090092
+			public const int friend_image = 2131296402;
 			
 			// aapt resource value: 0x7f090067
 			public const int grid = 2131296359;
 			
-			// aapt resource value: 0x7f090098
-			public const int gridMenuMakanan = 2131296408;
+			// aapt resource value: 0x7f09009a
+			public const int gridMenuMakanan = 2131296410;
 			
-			// aapt resource value: 0x7f09009f
-			public const int gridMenuMinuman = 2131296415;
+			// aapt resource value: 0x7f0900a1
+			public const int gridMenuMinuman = 2131296417;
+			
+			// aapt resource value: 0x7f0900a2
+			public const int gridMenuPesanan = 2131296418;
 			
 			// aapt resource value: 0x7f0900a0
-			public const int gridMenuPesanan = 2131296416;
-			
-			// aapt resource value: 0x7f09009e
-			public const int gridMenuSpesial = 2131296414;
+			public const int gridMenuSpesial = 2131296416;
 			
 			// aapt resource value: 0x7f090004
 			public const int home = 2131296260;
@@ -2101,14 +2107,17 @@ namespace MrGo
 			// aapt resource value: 0x7f090072
 			public const int imageView1 = 2131296370;
 			
-			// aapt resource value: 0x7f09009d
-			public const int imageViewMenu = 2131296413;
+			// aapt resource value: 0x7f090085
+			public const int imageViewBackGround = 2131296389;
+			
+			// aapt resource value: 0x7f09009f
+			public const int imageViewMenu = 2131296415;
 			
 			// aapt resource value: 0x7f090074
 			public const int imageViewProfile = 2131296372;
 			
-			// aapt resource value: 0x7f090085
-			public const int imageViewResto = 2131296389;
+			// aapt resource value: 0x7f090087
+			public const int imageViewResto = 2131296391;
 			
 			// aapt resource value: 0x7f090077
 			public const int imageViewURL = 2131296375;
@@ -2140,8 +2149,8 @@ namespace MrGo
 			// aapt resource value: 0x7f09007b
 			public const int linearLayout3 = 2131296379;
 			
-			// aapt resource value: 0x7f0900a6
-			public const int linearLayout4 = 2131296422;
+			// aapt resource value: 0x7f0900a8
+			public const int linearLayout4 = 2131296424;
 			
 			// aapt resource value: 0x7f090009
 			public const int listMode = 2131296265;
@@ -2152,32 +2161,26 @@ namespace MrGo
 			// aapt resource value: 0x7f09003a
 			public const int list_item = 2131296314;
 			
-			// aapt resource value: 0x7f09006d
-			public const int listview = 2131296365;
+			// aapt resource value: 0x7f09006e
+			public const int listview = 2131296366;
 			
-			// aapt resource value: 0x7f090095
-			public const int ll_background = 2131296405;
+			// aapt resource value: 0x7f090097
+			public const int ll_background = 2131296407;
 			
 			// aapt resource value: 0x7f090081
 			public const int llbackground = 2131296385;
 			
-			// aapt resource value: 0x7f090094
-			public const int lv_drawer = 2131296404;
+			// aapt resource value: 0x7f090096
+			public const int lv_drawer = 2131296406;
 			
 			// aapt resource value: 0x7f09006f
 			public const int main_content = 2131296367;
 			
-			// aapt resource value: 0x7f0900c3
-			public const int menu_refresh = 2131296451;
-			
 			// aapt resource value: 0x7f0900c4
 			public const int menu_search = 2131296452;
 			
-			// aapt resource value: 0x7f0900c2
-			public const int menu_settings = 2131296450;
-			
-			// aapt resource value: 0x7f0900c1
-			public const int menu_share = 2131296449;
+			// aapt resource value: 0x7f0900c3
+			public const int menu_share = 2131296451;
 			
 			// aapt resource value: 0x7f090015
 			public const int middle = 2131296277;
@@ -2197,14 +2200,14 @@ namespace MrGo
 			// aapt resource value: 0x7f09003d
 			public const int parentPanel = 2131296317;
 			
-			// aapt resource value: 0x7f09006c
-			public const int profile_description = 2131296364;
-			
-			// aapt resource value: 0x7f09006a
-			public const int profile_image = 2131296362;
+			// aapt resource value: 0x7f09006d
+			public const int profile_description = 2131296365;
 			
 			// aapt resource value: 0x7f09006b
-			public const int profile_name = 2131296363;
+			public const int profile_image = 2131296363;
+			
+			// aapt resource value: 0x7f09006c
+			public const int profile_name = 2131296364;
 			
 			// aapt resource value: 0x7f090005
 			public const int progress_circular = 2131296261;
@@ -2212,17 +2215,20 @@ namespace MrGo
 			// aapt resource value: 0x7f090006
 			public const int progress_horizontal = 2131296262;
 			
-			// aapt resource value: 0x7f0900ab
-			public const int psts_tab_title = 2131296427;
+			// aapt resource value: 0x7f0900ad
+			public const int psts_tab_title = 2131296429;
 			
 			// aapt resource value: 0x7f09004a
 			public const int radio = 2131296330;
 			
-			// aapt resource value: 0x7f090097
-			public const int resto_address = 2131296407;
+			// aapt resource value: 0x7f090084
+			public const int relativeLayout1 = 2131296388;
 			
-			// aapt resource value: 0x7f090096
-			public const int resto_name = 2131296406;
+			// aapt resource value: 0x7f090099
+			public const int resto_address = 2131296409;
+			
+			// aapt resource value: 0x7f090098
+			public const int resto_name = 2131296408;
 			
 			// aapt resource value: 0x7f090030
 			public const int right = 2131296304;
@@ -2311,20 +2317,20 @@ namespace MrGo
 			// aapt resource value: 0x7f090060
 			public const int textView2 = 2131296352;
 			
-			// aapt resource value: 0x7f0900a7
-			public const int textView3 = 2131296423;
-			
-			// aapt resource value: 0x7f0900a4
-			public const int textViewBiayaKirim = 2131296420;
-			
 			// aapt resource value: 0x7f0900a9
-			public const int textViewDelAddress = 2131296425;
+			public const int textView3 = 2131296425;
+			
+			// aapt resource value: 0x7f0900a6
+			public const int textViewBiayaKirim = 2131296422;
+			
+			// aapt resource value: 0x7f0900ab
+			public const int textViewDelAddress = 2131296427;
 			
 			// aapt resource value: 0x7f09007a
 			public const int textViewHarga = 2131296378;
 			
-			// aapt resource value: 0x7f09009c
-			public const int textViewJenis = 2131296412;
+			// aapt resource value: 0x7f09009e
+			public const int textViewJenis = 2131296414;
 			
 			// aapt resource value: 0x7f09007d
 			public const int textViewJumlah = 2131296381;
@@ -2335,32 +2341,32 @@ namespace MrGo
 			// aapt resource value: 0x7f090079
 			public const int textViewNama = 2131296377;
 			
-			// aapt resource value: 0x7f0900a1
-			public const int textViewRPembayaran = 2131296417;
+			// aapt resource value: 0x7f0900a3
+			public const int textViewRPembayaran = 2131296419;
 			
-			// aapt resource value: 0x7f090088
-			public const int textViewRestoName = 2131296392;
+			// aapt resource value: 0x7f09008a
+			public const int textViewRestoName = 2131296394;
 			
 			// aapt resource value: 0x7f090075
 			public const int textViewSaldo = 2131296373;
 			
-			// aapt resource value: 0x7f0900a8
-			public const int textViewStatus = 2131296424;
-			
-			// aapt resource value: 0x7f090087
-			public const int textViewTansactionDate = 2131296391;
-			
-			// aapt resource value: 0x7f0900a3
-			public const int textViewTotalBeli = 2131296419;
-			
-			// aapt resource value: 0x7f0900a5
-			public const int textViewTotalSemua = 2131296421;
-			
-			// aapt resource value: 0x7f090086
-			public const int textViewTransactionNo = 2131296390;
+			// aapt resource value: 0x7f0900aa
+			public const int textViewStatus = 2131296426;
 			
 			// aapt resource value: 0x7f090089
-			public const int textViewTransactionStatus = 2131296393;
+			public const int textViewTansactionDate = 2131296393;
+			
+			// aapt resource value: 0x7f0900a5
+			public const int textViewTotalBeli = 2131296421;
+			
+			// aapt resource value: 0x7f0900a7
+			public const int textViewTotalSemua = 2131296423;
+			
+			// aapt resource value: 0x7f090088
+			public const int textViewTransactionNo = 2131296392;
+			
+			// aapt resource value: 0x7f09008b
+			public const int textViewTransactionStatus = 2131296395;
 			
 			// aapt resource value: 0x7f09003c
 			public const int title = 2131296316;
@@ -2368,8 +2374,8 @@ namespace MrGo
 			// aapt resource value: 0x7f09003f
 			public const int title_template = 2131296319;
 			
-			// aapt resource value: 0x7f09006e
-			public const int toolbar = 2131296366;
+			// aapt resource value: 0x7f09006a
+			public const int toolbar = 2131296362;
 			
 			// aapt resource value: 0x7f090071
 			public const int toolbar_bottom = 2131296369;
@@ -2380,41 +2386,41 @@ namespace MrGo
 			// aapt resource value: 0x7f09003e
 			public const int topPanel = 2131296318;
 			
-			// aapt resource value: 0x7f0900af
-			public const int tvForgotPassword = 2131296431;
+			// aapt resource value: 0x7f0900b1
+			public const int tvForgotPassword = 2131296433;
 			
 			// aapt resource value: 0x7f090061
 			public const int tvPhone = 2131296353;
 			
-			// aapt resource value: 0x7f0900b4
-			public const int tvTerms = 2131296436;
+			// aapt resource value: 0x7f0900b6
+			public const int tvTerms = 2131296438;
 			
 			// aapt resource value: 0x7f090070
 			public const int tvWelcomeUser = 2131296368;
 			
-			// aapt resource value: 0x7f09008a
-			public const int txt1 = 2131296394;
-			
 			// aapt resource value: 0x7f09008c
-			public const int txt2 = 2131296396;
+			public const int txt1 = 2131296396;
 			
-			// aapt resource value: 0x7f0900b6
-			public const int txt3 = 2131296438;
+			// aapt resource value: 0x7f09008e
+			public const int txt2 = 2131296398;
 			
 			// aapt resource value: 0x7f0900b8
-			public const int txt4 = 2131296440;
+			public const int txt3 = 2131296440;
 			
 			// aapt resource value: 0x7f0900ba
-			public const int txt5 = 2131296442;
+			public const int txt4 = 2131296442;
 			
-			// aapt resource value: 0x7f0900bb
-			public const int txt6 = 2131296443;
+			// aapt resource value: 0x7f0900bc
+			public const int txt5 = 2131296444;
 			
-			// aapt resource value: 0x7f0900c0
-			public const int txtUserName = 2131296448;
+			// aapt resource value: 0x7f0900bd
+			public const int txt6 = 2131296445;
 			
-			// aapt resource value: 0x7f0900bf
-			public const int txtWelcome = 2131296447;
+			// aapt resource value: 0x7f0900c2
+			public const int txtUserName = 2131296450;
+			
+			// aapt resource value: 0x7f0900c1
+			public const int txtWelcome = 2131296449;
 			
 			// aapt resource value: 0x7f090008
 			public const int up = 2131296264;
@@ -2563,109 +2569,124 @@ namespace MrGo
 			public const int fragment_gofoodAll = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int fragment_profile = 2130903069;
+			public const int fragment_gofoodAllToolbar = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int fragment_restaurant = 2130903070;
+			public const int fragment_mrfood = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int fragment_transaction_status = 2130903071;
+			public const int fragment_profile = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int headerdrawerlayout = 2130903072;
+			public const int fragment_restaurant = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int Home = 2130903073;
+			public const int fragment_transaction_status = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int item_menu = 2130903074;
+			public const int headerdrawerlayout = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int item_menu_details = 2130903075;
+			public const int Home = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int item_menu_resto = 2130903076;
+			public const int item_menu = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int item_monkey = 2130903077;
+			public const int item_menu_details = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int item_restaurant = 2130903078;
+			public const int item_menu_resto = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int item_resto = 2130903079;
+			public const int item_monkey = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int item_review_order = 2130903080;
+			public const int item_restaurant = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int item_transaction = 2130903081;
+			public const int item_resto = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int Main = 2130903082;
+			public const int item_resto_imgView = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int MainActivity = 2130903083;
+			public const int item_restoCat_imgView = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int page_friend = 2130903084;
+			public const int item_review_order = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int page_home_view = 2130903085;
+			public const int item_transaction = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int page_resto_menu = 2130903086;
+			public const int Main = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int page_resto_menu_details = 2130903087;
+			public const int MainActivity = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int page_resto_menu_img = 2130903088;
+			public const int page_friend = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int page_resto_menub = 2130903089;
+			public const int page_home_view = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int page_review_order = 2130903090;
+			public const int page_resto_menu = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int page_view_order = 2130903091;
+			public const int page_resto_menu_details = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int psts_tab = 2130903092;
+			public const int page_resto_menu_img = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int select_dialog_item_material = 2130903093;
+			public const int page_resto_menu_mrrecommend = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int select_dialog_multichoice_material = 2130903094;
+			public const int page_resto_menub = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int select_dialog_singlechoice_material = 2130903095;
+			public const int page_review_order = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int SignInScreen = 2130903096;
+			public const int page_view_order = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int SignUpScreen = 2130903097;
+			public const int psts_tab = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int SignUpScreenXX = 2130903098;
+			public const int select_dialog_item_material = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int StartScreen = 2130903099;
+			public const int select_dialog_multichoice_material = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int support_simple_spinner_dropdown_item = 2130903100;
+			public const int select_dialog_singlechoice_material = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int toolbar = 2130903101;
+			public const int SignInScreen = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int WelcomeUser = 2130903102;
+			public const int SignUpScreen = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int zTest = 2130903103;
+			public const int SignUpScreenXX = 2130903103;
+			
+			// aapt resource value: 0x7f030040
+			public const int StartScreen = 2130903104;
+			
+			// aapt resource value: 0x7f030041
+			public const int support_simple_spinner_dropdown_item = 2130903105;
+			
+			// aapt resource value: 0x7f030042
+			public const int toolbar = 2130903106;
+			
+			// aapt resource value: 0x7f030043
+			public const int WelcomeUser = 2130903107;
+			
+			// aapt resource value: 0x7f030044
+			public const int zTest = 2130903108;
 			
 			static Layout()
 			{

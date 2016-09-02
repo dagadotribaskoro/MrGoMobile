@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="180dp"
+    android:layout_height="200dp"
     android:paddingBottom="8dp"
     android:id="@+id/item_background"
     android:background="@drawable/resto">
@@ -45,12 +45,6 @@
         android:scrollbarStyle="outsideInset"
         android:smoothScrollbar="true" />-->
     <TextView
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:paddingBottom="100dp" />
-    <TextView
         android:id="@+id/item_title"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
@@ -59,7 +53,8 @@
         android:text="Restoran Lezat"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:singleLine="true"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:paddingTop="150dp" />
     <TextView
         android:id="@+id/item_address"
         android:paddingLeft="8dp"

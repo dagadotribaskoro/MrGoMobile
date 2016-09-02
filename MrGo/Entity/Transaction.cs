@@ -130,8 +130,8 @@ namespace MrGo.Entity
                 m.transaction_code = datas[16];
                 m.transaction_date = datas[17] == "" ? CommonUtils.NULL_DATE : Convert.ToDateTime(datas[17]);
                 m.transaction_status = datas[14] == "" ? TransactionStatus.Waiting : (TransactionStatus)Enum.Parse(typeof(TransactionStatus), datas[14]);
-                m.resto_name = datas[21];
-                m.resto_url_image = datas[22];
+                m.resto_name = datas[22];
+                m.resto_url_image = datas[23];
                 m.total_all = datas[20] == "" ? 0 : Convert.ToDecimal(datas[20]);
                 m.charge = datas[13] == "" ? 0 : Convert.ToDecimal(datas[13]);
                 m.total_buy = datas[19] == "" ? 0 : Convert.ToDecimal(datas[19]);
