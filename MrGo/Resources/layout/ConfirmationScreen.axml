@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+    <TextView
+        android:text="MrGo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:text="Always ready to go!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_dark" />
+    <TextView
+        android:text="We just Texted a code to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:text="081364108810"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvPhone"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etConfirmationCode"
+        android:hint="Enter Code"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_marginRight="75dp"
+        android:layout_marginLeft="75dp"
+        android:textColor="@android:color/black" />
+    <Button
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/btnNext"
+        android:textColor="@android:color/holo_orange_light"
+        android:background="@drawable/btnSignIn"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="75dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:text="@string/editnumber"
+            android:id="@+id/btnEditNumber"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content" />
+        <Button
+            android:text="@string/sendagain"
+            android:id="@+id/btnSendAgain"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+</LinearLayout>

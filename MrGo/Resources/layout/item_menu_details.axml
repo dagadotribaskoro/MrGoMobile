@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:src="@drawable/imgmrgodrawer"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/imageViewProfile"
+        android:scaleType="fitXY" />
+    <TextView
+        android:text="Saldo : Rp. 150.000"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="40dp"
+        android:id="@+id/textViewSaldo"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold" />
+    <TextView
+        android:text="My Profile"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_height="40dp"
+        android:id="@+id/textViewMenuItem"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/black" />
+</LinearLayout>

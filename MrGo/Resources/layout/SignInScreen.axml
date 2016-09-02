@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+    <TextView
+        android:text="MrGo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:text="Always ready to go!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_dark" />
+  <AutoCompleteTextView
+      android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/etSignIn"
+        android:drawableLeft="@drawable/user25"
+        android:textSize="15sp"
+        android:textColor="@android:color/black" />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/etPassword"
+        android:background="@drawable/etSignIn"
+        android:hint="Password"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/password25"
+        android:textSize="15sp"
+        android:textColor="@android:color/black" />
+    <Button
+        android:text="Log In"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/btnLogIn"
+        android:textColor="@android:color/holo_orange_light"
+        android:background="@drawable/btnSignIn"
+        android:layout_marginTop="5dp" />
+    <TextView
+        android:text="@string/forgotpassword"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvForgotPassword"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:clickable="true" />
+</LinearLayout>

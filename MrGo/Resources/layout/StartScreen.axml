@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    android:paddingLeft="70dp"
+    android:paddingRight="70dp">
+    <TextView
+        android:text="MrGo"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="200dp" />
+    <TextView
+        android:text="Always ready to go!"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textColor="@android:color/holo_orange_dark" />
+    <Button
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:id="@+id/btnSignUp"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:background="@drawable/btnSignUp"
+        android:textStyle="bold" />
+    <TextView
+        android:text="Already have a MrGo account?"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:text="Log In"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dp"
+        android:id="@+id/btnSignIn"
+        android:textColor="@android:color/holo_orange_light"
+        android:background="@drawable/btnSignIn" />
+    <TextView
+        android:text="By using MrGo you agree to MrGo's"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:text="@string/term"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTerms"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:clickable="true" />
+</LinearLayout>

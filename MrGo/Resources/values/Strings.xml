@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">MrGo</string>
+  <string name="term"><u>Term of Use and Privacy Policy</u></string>
+  <string name="forgotpassword"><u>Forgot password?</u></string>
+  <string name="editnumber"><u>Edit number?</u></string>
+  <string name="sendagain"><u>Send code again?</u></string>
+  <string name="app_name">Mr.Go!...</string>
+  <string name="prompt_email">Email</string>
+  <string name="prompt_name">Name</string>
+  <string name="prompt_phone">Phone</string>
+  <string name="prompt_address">Address</string>
+  <string name="prompt_password">Password</string>
+  <string name="prompt_cpassword">Confirm Password</string>
+  <string name="login_bn_label">Login</string>
+  <string name="sign_up_text">New User? Sign Up.</string>
+  <string name="reg_bn_label">Register</string>
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+  <string name="menu_refresh">Refresh</string>
+  <string name="menu_search">Search</string>
+  <string name="strBottomLine">From android material design</string>
+
+</resources>

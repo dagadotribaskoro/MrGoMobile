@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_below="@id/toolbar"
+            android:paddingBottom="8dp">
+            <TextView
+                android:text="Pesanan Anda"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewJenis"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/holo_red_dark" />
+            <MrGo.Entity.ExpandableHeightGridView
+                android:id="@+id/gridMenuPesanan"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:longClickable="true"
+                android:stretchMode="columnWidth"
+                android:drawSelectorOnTop="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:horizontalSpacing="8dp"
+                android:verticalSpacing="8dp"
+                android:gravity="center" />
+        <!--<LinearLayout
+                android:orientation="vertical"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_restomenu"
+                android:id="@+id/linearLayout1"
+                android:paddingBottom="8dp"
+                android:paddingTop="10dp" />-->
+            <TextView
+                android:text="Alamat Tujuan"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewRPembayaran"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:paddingBottom="8dp" />
+            <EditText
+                android:inputType="textPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextDelAddress"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:text="Rincian Pembayaran"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewJenis"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:paddingBottom="8dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout1"
+                android:paddingBottom="5dp">
+                <TextView
+                    android:text="Total Pembelian"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView1" />
+                <TextView
+                    android:text="Rp. 50.000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewTotalBeli"
+                    android:textAlignment="textEnd"
+                    android:gravity="right"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout2">
+                <TextView
+                    android:text="Biaya Kirim"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:text="Rp. 10.000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewBiayaKirim"
+                    android:textAlignment="textEnd"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:paddingBottom="5dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+                <TextView
+                    android:text="Total"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2" />
+                <TextView
+                    android:text="Rp. 60.000"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewTotalSemua"
+                    android:textAlignment="textEnd"
+                    android:gravity="right"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <TextView
+                android:text="Cara Pembayaran"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewJenis"
+                android:paddingTop="8dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:paddingBottom="8dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout4"
+                android:paddingBottom="5dp">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:text="GO-Pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+                </RadioGroup>
+                <TextView
+                    android:text="Saldo : Rp. 500.000"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3"
+                    android:gravity="right|center_vertical" />
+            </LinearLayout>
+            <Button
+                android:text="Lanjut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPesan"
+                android:background="@android:color/holo_green_dark"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

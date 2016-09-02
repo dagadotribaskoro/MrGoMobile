@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/linearLayout1"
+        android:background="@drawable/layout_restomenu">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageViewURL"
+            android:paddingLeft="8dp"
+            android:src="@drawable/item_menu_resto"
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:longClickable="true" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2"
+            android:gravity="center_horizontal">
+            <TextView
+                android:text="Medium Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewNama"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:textSize="15sp"
+                android:textColor="#4A4A4A"
+                android:clickable="true"
+                android:longClickable="true" />
+            <TextView
+                android:text="Small Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewHarga"
+                android:paddingLeft="8dp"
+                android:textSize="10sp"
+                android:textColor="#4A4A4A"
+                android:clickable="true"
+                android:longClickable="true" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout3"
+            android:gravity="right"
+            android:layout_marginLeft="0.0dp">
+            <Button
+                android:text="-"
+                android:layout_width="38.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonKurang"
+                android:layout_marginRight="0.0dp" />
+            <TextView
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="33.5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewJumlah"
+                android:gravity="center"
+                android:layout_marginLeft="0.0dp"
+                android:layout_marginRight="0.0dp"
+                android:textColor="#4A4A4A" />
+        <!--<EditText
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewJumlah"
+                android:gravity="center" />-->
+            <Button
+                android:text="+"
+                android:layout_width="38.0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonTambah"
+                android:layout_marginRight="0.0dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

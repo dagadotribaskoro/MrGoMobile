@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    android:paddingBottom="8dp"
+    android:id="@+id/item_background"
+    android:background="@drawable/resto">
+<!--<ImageView
+        android:id="@+id/item_image"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher"
+        android:tint="#b4b4b4ff" />
+    <TextView
+        android:id="@+id/item_title"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Name here"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp" />-->
+<!--<GridView
+        android:id="@+id/grid"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="@integer/item_columns"
+        android:longClickable="true"
+        android:stretchMode="columnWidth"
+        android:drawSelectorOnTop="true"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:gravity="center"
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideInset"
+        android:smoothScrollbar="true" />-->
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:paddingBottom="100dp" />
+    <TextView
+        android:id="@+id/item_title"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Restoran Lezat"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:singleLine="true"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/item_address"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Jl. Sudirman No.10 Nagoya"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:singleLine="true"
+        android:textColor="@android:color/white" />
+</LinearLayout>
